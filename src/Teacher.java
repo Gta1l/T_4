@@ -10,12 +10,12 @@ public class Teacher extends People{
     }
 
 
-    public List<String> getPairs() {
+    public List<String> getCourse() {
         return this.Courses;
     }
 
-    public void setPairs(List<String> pairs) {
-        this.Courses = pairs;
+    public void setCourse(List<String> courses) {
+        this.Courses = courses;
     }
 
     public void addCourse (String course) {;
