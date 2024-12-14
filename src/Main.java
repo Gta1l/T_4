@@ -5,14 +5,14 @@ public class Main {
     public static void main(String[] args) {
 
     Student a = new Student("Kirill", "Nikolaev");
-    Teacher b = new Teacher("Pavel", "Panilov", new ArrayList<String>());
+    Teacher b = new Teacher("Pavel", "Panilov", new ArrayList<>());
     b.addCourse("Computer Science");
-    Teacher d = new Teacher("Artem", "Nikolaev", new ArrayList<String>());
+    Teacher d = new Teacher("Artem", "Nikolaev", new ArrayList<>());
     d.addCourse("Computer Science");
     a.setTutor(b);
 
 
-    List<People> p = new ArrayList<People>();
+    List<People> p = new ArrayList<>();
     p.add(a);
     p.add(b);
 
