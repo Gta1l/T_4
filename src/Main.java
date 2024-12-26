@@ -4,7 +4,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-    Student a = new Student("Kirill", "Nikolaev");
+    Student a = new Mathstudent("Kirill", "Nikolaev", 1, 5);
+    Student c = new IUstudent("Kirill", "Nikolaev", 1, 5);
     Teacher b = new Teacher("Pavel", "Panilov", new ArrayList<>());
     b.addCourse("Computer Science");
     Teacher d = new Teacher("Artem", "Nikolaev", new ArrayList<>());
@@ -12,12 +13,13 @@ public class Main {
     a.setTutor(b);
 
 
-    List<People> p = new ArrayList<>();
+    List<Student> p = new ArrayList<>();
     p.add(a);
-    p.add(b);
+    p.add(c);
 
-    for (People pp: p) {
-        System.out.println(pp);
+
+    for (Student pp: p) {
+        System.out.println(pp + " " + pp.writeExam());
     }
 
     }
